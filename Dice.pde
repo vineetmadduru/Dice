@@ -3,7 +3,6 @@ void setup()
 {
   noLoop();
   size(800,500);
-  frameRate(20);
 }
 void draw()
 {
@@ -23,10 +22,10 @@ void draw()
     text("Average:",550, 100);
     text(average,700,100);
 }
-//void mousePressed()
-//{
-  //redraw();
-//}
+void mousePressed()
+{
+  redraw();
+}
 class Die //models one single dice cube
 {
   int myX, myY, numDie;
